@@ -25,7 +25,6 @@
             }
         },
         mounted() {
-            console.log(this.user);
             axios.get('/contacts')
                 .then((response) => {
                     this.contacts = response.data;
