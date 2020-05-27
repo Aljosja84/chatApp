@@ -10882,3 +10882,7 @@ a.text-dark:focus {
   }
 }
 
+.card-body {
+  padding: 0 !important;
+}
+
