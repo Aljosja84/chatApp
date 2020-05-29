@@ -52,6 +52,7 @@
             padding: 5px;
 
             li {
+
                 &.message {
                     margin: 10px 0;
                     width: 100%;
@@ -61,6 +62,7 @@
                         border-radius: 5px;
                         padding: 12px;
                         display: inline-block;
+
                     }
 
                     &.received {
