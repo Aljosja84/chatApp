@@ -51,6 +51,9 @@
                     this.saveNewMessage(message);
                     return;
                 }
+            },
+            updateReadCount(contact) {
+                
             }
         },
         components: {

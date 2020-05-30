@@ -1960,7 +1960,8 @@ __webpack_require__.r(__webpack_exports__);
         this.saveNewMessage(message);
         return;
       }
-    }
+    },
+    updateReadCount: function updateReadCount(contact) {}
   },
   components: {
     Conversation: _Conversation__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -1995,6 +1996,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     contacts: {
@@ -2012,7 +2014,8 @@ __webpack_require__.r(__webpack_exports__);
       this.selected = index;
       this.$emit('selected', contact);
     }
-  }
+  },
+  computed: {}
 });
 
 /***/ }),
@@ -6725,7 +6728,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".contacts-list[data-v-484f3208] {\n  flex: 2;\n  max-height: 800px;\n  overflow: scroll;\n  border-left: 1px solid lightskyblue;\n}\nul[data-v-484f3208] {\n  list-style-type: none;\n  padding-left: 0;\n}\nul li[data-v-484f3208] {\n  display: flex;\n  padding: 2px;\n  border-bottom: 1px solid lightskyblue;\n  height: 80px;\n  position: relative;\n  cursor: pointer;\n}\nul li.selected[data-v-484f3208] {\n  background: lightskyblue;\n}\nul li .avatar[data-v-484f3208] {\n  flex: 1;\n  display: flex;\n  align-items: center;\n}\nul li .avatar img[data-v-484f3208] {\n  width: 35px;\n  border-radius: 50%;\n  margin: 0 auto;\n}\nul li .contact[data-v-484f3208] {\n  flex: 3;\n  font-size: 12px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\nul li .contact p[data-v-484f3208] {\n  margin: 0;\n}\nul li .contact p.name[data-v-484f3208] {\n  font-weight: bold;\n}", ""]);
+exports.push([module.i, ".contacts-list[data-v-484f3208] {\n  flex: 2;\n  max-height: 800px;\n  overflow: scroll;\n  border-left: 1px solid lightskyblue;\n}\nul[data-v-484f3208] {\n  list-style-type: none;\n  padding-left: 0;\n}\nul li[data-v-484f3208] {\n  display: flex;\n  padding: 2px;\n  border-bottom: 1px solid lightskyblue;\n  height: 80px;\n  position: relative;\n  cursor: pointer;\n}\nul li.selected[data-v-484f3208] {\n  background: lightskyblue;\n}\nul li span.unread[data-v-484f3208] {\n  background: red;\n  color: white;\n  position: absolute;\n  right: 11px;\n  top: 20px;\n  display: flex;\n  font-weight: 700;\n  min-width: 20px;\n  justify-content: center;\n  align-items: center;\n  line-height: 20px;\n  font-size: 12px;\n  padding: 0 4px;\n  border-radius: 15px;\n}\nul li .avatar[data-v-484f3208] {\n  flex: 1;\n  display: flex;\n  align-items: center;\n}\nul li .avatar img[data-v-484f3208] {\n  width: 35px;\n  border-radius: 50%;\n  margin: 0 auto;\n}\nul li .contact[data-v-484f3208] {\n  flex: 3;\n  font-size: 12px;\n  overflow: hidden;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n}\nul li .contact p[data-v-484f3208] {\n  margin: 0;\n}\nul li .contact p.name[data-v-484f3208] {\n  font-weight: bold;\n}", ""]);
 
 // exports
 
@@ -44737,7 +44740,13 @@ var render = function() {
               _c("p", { staticClass: "name" }, [_vm._v(_vm._s(contact.name))]),
               _vm._v(" "),
               _c("p", { staticClass: "email" }, [_vm._v(_vm._s(contact.email))])
-            ])
+            ]),
+            _vm._v(" "),
+            contact.unread
+              ? _c("span", { staticClass: "unread" }, [
+                  _vm._v(_vm._s(contact.unread))
+                ])
+              : _vm._e()
           ]
         )
       }),

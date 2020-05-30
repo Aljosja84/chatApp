@@ -9,6 +9,7 @@
                     <p class="name">{{ contact.name }}</p>
                     <p class="email">{{ contact.email }}</p>
                 </div>
+                <span class="unread" v-if="contact.unread">{{ contact.unread }}</span>
             </li>
         </ul>
     </div>
@@ -33,6 +34,9 @@
 
                 this.$emit('selected', contact);
             }
+        },
+        computed: {
+
         }
     }
 </script>
@@ -59,6 +63,23 @@
 
             &.selected {
                 background: lightskyblue;
+            }
+
+            span.unread {
+                background: red;
+                color: white;
+                position: absolute;
+                right: 11px;
+                top: 20px;
+                display: flex;
+                font-weight: 700;
+                min-width: 20px;
+                justify-content: center;
+                align-items: center;
+                line-height: 20px;
+                font-size: 12px;
+                padding: 0 4px;
+                border-radius: 15px;
             }
 
             .avatar {
