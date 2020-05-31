@@ -33,7 +33,8 @@ class ContactsController extends Controller
 
     public function getMessagesFor($id)
     {
-        //$messages = Message::where('from', $id)->orWhere('to', $id)->get();
+        //mark all messages as read
+        Message::where('from', $id)->where('to', auth()->id())->update(['read' => true]);
 
         $messages = Message::where(function($q) use ($id) {
             $q->where('from', auth()->id());

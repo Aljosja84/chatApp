@@ -38,6 +38,7 @@ class newMessage implements ShouldBroadcast
 
     public function broadCastWith()
     {
+        $this->message->load('fromContact');
         return ["message" => $this->message];
     }
 }

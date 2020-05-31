@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7f2355b6-dead-491e-9fa1-a794c15774f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Events/newMessage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Events/newMessage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ContactsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Message.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/ChatApp.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ChatApp.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/ContactsList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ContactsList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +145,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LaraForum" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -179,7 +182,9 @@
       <workItem from="1590598744052" duration="257000" />
       <workItem from="1590667344996" duration="10286000" />
       <workItem from="1590755221067" duration="12330000" />
-      <workItem from="1590866231919" duration="5795000" />
+      <workItem from="1590866231919" duration="6343000" />
+      <workItem from="1590875011665" duration="130000" />
+      <workItem from="1590927235317" duration="4170000" />
     </task>
     <servers />
   </component>
@@ -187,6 +192,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2865" y="574" key="FileChooserDialogImpl" timestamp="1590874768322">
+      <screen x="2560" y="0" width="1050" height="1640" />
+    </state>
+    <state x="2865" y="574" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1050.1640@2560.0.1050.1640" timestamp="1590874768322" />
     <state x="2748" y="375" width="672" height="678" key="search.everywhere.popup" timestamp="1590759778221">
       <screen x="2560" y="0" width="1050" height="1640" />
     </state>
